@@ -27,7 +27,7 @@ var list = [{
 $('#wrap').render('#tpl', list);
 ```
 
-### $(dom).trust([wait], events,  [,selector],  [, data], handler(eventObject, self, data));
+### $(dom).trust([wait,] events,  [selector,]  [data,] handler(eventObject, self, data));
 对jquery on事件进行扩展。   
 1. 增加了wait，指定时间内只触发一次
 2. handler 默认返回$(this)，和$(this).data();

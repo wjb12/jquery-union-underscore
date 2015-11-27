@@ -11,7 +11,7 @@
 <div id="wrap" data-name="wrap">hello</div>
 <script type="text/javascript">
     $('#wrap').trust(1000, 'click', function(event, my, data){
-        console.log(my.text());
+        console.log(my.text(), data.name);
     });
 </script>   
 </body>

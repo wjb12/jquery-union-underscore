@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ease</title>
+    <script type="text/javascript" src="../lib/underscore-min.js"></script>
+    <script type="text/javascript" src="../lib/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../src/juu.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    setTimeout(function(){
+        var list = [{
+            name : 'kyo',
+            age : 18
+        },{
+            name : 'iori',
+            age : 17
+        },{
+            name : 'tirry',
+            age : 19
+        }];
+
+        //发布
+        _.pub('list', list, 1, 2, 3);
+    }, 100);
+
+
+    //订阅 - 刷banner
+    _.sub('list', function(list, a, b, c){
+        console.log(list);
+    });
+
+    //订阅 - 刷菜单
+    _.sub('list', function(list, a, b, c){
+        console.log(a, b, c);
+    });
+
+
+
+
+</script>   
+</body>
+</html>
