@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ease</title>
+    <script type="text/javascript" src="../lib/underscore-min.js"></script>
+    <script type="text/javascript" src="../lib/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../src/juu.js"></script>
+</head>
+<body>
+<div id="wrap" data-name="wrap"></div>
+<script type="text/html" id="tpl">
+    <div><%= v.name %> - <%= v.age %></div>
+</script>
+<script type="text/javascript">
+    var list = [{
+        name : 'kyo',
+        age : 18
+    },{
+        name : 'iori',
+        age : 17
+    },{
+        name : 'tirry',
+        age : 19
+    }];
+    $('#wrap').render('#tpl', list);
+</script>   
+</body>
+</html>
