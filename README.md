@@ -22,4 +22,21 @@
 2. handler参数依次为event对象，$(this)和$(this).data();                                
 
 例一：在线示例：<http://runjs.cn/code/orefcetx/>          
-例二：在线示例：<http://runjs.cn/code/c8l2hqnn/>    
+例二：在线示例：<http://runjs.cn/code/c8l2hqnn/>       
+
+
+
+_.date(new Date()).format('yyyy-MM-dd HH:mm:ss') //格式化
+
+_.date(new Date()).days(1) //一天后
+_.date(new Date()).days(-1) //一天前
+_.date(new Date()).week(1) //一周后
+_.date(new Date()).week(-1) //一周前
+_.date(new Date()).months(1) //一个月后
+_.date(new Date()).months(-1) //一个月前
+_.date(new Date()).years(1) //一年后
+_.date(new Date()).years(-1) //一年前
+
+_.date(new Date()).start('day') //当前时间的，一天的开始
+_.date(new Date()).start('week') //当前时间的，一周的开始
+_.date(new Date()).start('month') //当前时间的，一月的开始
